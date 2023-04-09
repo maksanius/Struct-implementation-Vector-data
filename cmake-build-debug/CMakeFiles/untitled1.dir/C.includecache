@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User/CLionProjects/untitled1/libs/data_structures/vector/vector.c
-vector.h
-C:/Users/User/CLionProjects/untitled1/libs/data_structures/vector/vector.h
-
 C:/Users/User/CLionProjects/untitled1/libs/data_structures/vector/vector.h
 stdlib.h
 C:/Users/User/CLionProjects/untitled1/libs/data_structures/vector/stdlib.h
@@ -17,6 +13,10 @@ malloc.h
 C:/Users/User/CLionProjects/untitled1/libs/data_structures/vector/malloc.h
 stdio.h
 C:/Users/User/CLionProjects/untitled1/libs/data_structures/vector/stdio.h
+stdbool.h
+C:/Users/User/CLionProjects/untitled1/libs/data_structures/vector/stdbool.h
+assert.h
+C:/Users/User/CLionProjects/untitled1/libs/data_structures/vector/assert.h
 
 C:/Users/User/CLionProjects/untitled1/main.c
 stdio.h
