@@ -52,6 +52,7 @@ CMAKE_BINARY_DIR = C:\Users\User\CLionProjects\untitled1\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/data_structures.dir/all
 all: CMakeFiles/untitled1.dir/all
 
 .PHONY : all
@@ -62,9 +63,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/data_structures.dir/clean
 clean: CMakeFiles/untitled1.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/data_structures.dir
+
+# All Build rule for target.
+CMakeFiles/data_structures.dir/all:
+	$(MAKE) -f CMakeFiles\data_structures.dir\build.make CMakeFiles/data_structures.dir/depend
+	$(MAKE) -f CMakeFiles\data_structures.dir\build.make CMakeFiles/data_structures.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\untitled1\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target data_structures"
+.PHONY : CMakeFiles/data_structures.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/data_structures.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\untitled1\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/data_structures.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\untitled1\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/data_structures.dir/rule
+
+# Convenience name for target.
+data_structures: CMakeFiles/data_structures.dir/rule
+
+.PHONY : data_structures
+
+# clean rule for target.
+CMakeFiles/data_structures.dir/clean:
+	$(MAKE) -f CMakeFiles\data_structures.dir\build.make CMakeFiles/data_structures.dir/clean
+.PHONY : CMakeFiles/data_structures.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/untitled1.dir
@@ -73,12 +102,12 @@ clean: CMakeFiles/untitled1.dir/clean
 CMakeFiles/untitled1.dir/all:
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/depend
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\untitled1\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target untitled1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\untitled1\cmake-build-debug\CMakeFiles --progress-num=3,4,5 "Built target untitled1"
 .PHONY : CMakeFiles/untitled1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/untitled1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\untitled1\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\untitled1\cmake-build-debug\CMakeFiles 3
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/untitled1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\untitled1\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/untitled1.dir/rule

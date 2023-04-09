@@ -110,6 +110,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named data_structures
+
+# Build rule for target.
+data_structures: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 data_structures
+.PHONY : data_structures
+
+# fast build rule for target.
+data_structures/fast:
+	$(MAKE) -f CMakeFiles\data_structures.dir\build.make CMakeFiles/data_structures.dir/build
+.PHONY : data_structures/fast
+
+#=============================================================================
 # Target rules for targets named untitled1
 
 # Build rule for target.
@@ -121,6 +134,36 @@ untitled1: cmake_check_build_system
 untitled1/fast:
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
+
+libs/data_structures/vector/vector.obj: libs/data_structures/vector/vector.c.obj
+
+.PHONY : libs/data_structures/vector/vector.obj
+
+# target to build an object file
+libs/data_structures/vector/vector.c.obj:
+	$(MAKE) -f CMakeFiles\data_structures.dir\build.make CMakeFiles/data_structures.dir/libs/data_structures/vector/vector.c.obj
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/libs/data_structures/vector/vector.c.obj
+.PHONY : libs/data_structures/vector/vector.c.obj
+
+libs/data_structures/vector/vector.i: libs/data_structures/vector/vector.c.i
+
+.PHONY : libs/data_structures/vector/vector.i
+
+# target to preprocess a source file
+libs/data_structures/vector/vector.c.i:
+	$(MAKE) -f CMakeFiles\data_structures.dir\build.make CMakeFiles/data_structures.dir/libs/data_structures/vector/vector.c.i
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/libs/data_structures/vector/vector.c.i
+.PHONY : libs/data_structures/vector/vector.c.i
+
+libs/data_structures/vector/vector.s: libs/data_structures/vector/vector.c.s
+
+.PHONY : libs/data_structures/vector/vector.s
+
+# target to generate assembly for a file
+libs/data_structures/vector/vector.c.s:
+	$(MAKE) -f CMakeFiles\data_structures.dir\build.make CMakeFiles/data_structures.dir/libs/data_structures/vector/vector.c.s
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/libs/data_structures/vector/vector.c.s
+.PHONY : libs/data_structures/vector/vector.c.s
 
 main.obj: main.c.obj
 
@@ -155,9 +198,13 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... data_structures
 	@echo ... untitled1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... libs/data_structures/vector/vector.obj
+	@echo ... libs/data_structures/vector/vector.i
+	@echo ... libs/data_structures/vector/vector.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
