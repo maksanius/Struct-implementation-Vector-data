@@ -39,4 +39,18 @@ void pop_back(vector *v);
 
 void test_pop_back_not_empty_vector();
 
+int *at_vector(vector *v, size_t index);
+
+void test_at_vector_not_empty_vector();
+
+void test_at_vector_request_to_last_element();
+
+int *back(vector *v);
+
+void test_back_one_element_in_vector();
+
+int *front(vector *v);
+
+void test_front_one_element_in_vector();
+
 #endif //UNTITLED1_VECTOR_H
